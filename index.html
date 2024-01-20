@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Shirt Templates App</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #3498db, #2980b9);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #2c3e50;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        section {
+            max-width: 600px;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            color: #333; /* Adjusted text color */
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+            line-height: 1.5;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #2c3e50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+            margin-top: 20px;
+        }
+
+        .download-button:hover {
+            background-color: #1c2833;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+            margin-top: auto;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Fade-in animation keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Roblox Shirt Templates App</h1>
+    </header>
+
+    <section>
+        <p>Welcome to the official website for the Roblox Shirt Templates app! Download now and start creating amazing shirt designs for Roblox.</p>
+        <a class="download-button" href="RobloxShirtTemplatesApp.exe" download>Download App</a>
+    </section>
+
+    <section>
+        <h2>Features</h2>
+        <p>Explore the powerful features of our app, including:</p>
+        <ul>
+            <li>Easy-to-use interface</li>
+            <li>High-quality templates</li>
+            <li>Customization options</li>
+            <li>And much more!</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>How to Use</h2>
+        <p>Creating stunning shirt designs for Roblox is simple with our app. Follow these steps:</p>
+        <ol>
+            <li>Download and install the app.</li>
+            <li>Choose a template from the gallery.</li>
+            <li>Customize the design to your liking.</li>
+            <li>Save and upload to Roblox!</li>
+        </ol>
+    </section>
+
+    <footer>
+        &copy; 2024 Roblox Shirt Templates App. All rights reserved.
+    </footer>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
